@@ -1,5 +1,11 @@
 // ------ MAIN ------ //
 
+$mainColor: #EA4335;
+
+$theme-colors: (
+        "recipes": $mainColor
+);
+
 .center {
   text-align: center;
 }
@@ -7,8 +13,8 @@
 
 // ------ NAVBAR ------ //
 
-nav {
-  background-color: #EA4335;
+nav.navbar {
+  background-color: $mainColor;
 }
 
 #logo {
@@ -23,4 +29,21 @@ nav {
 #logo:hover {
   color: #fff;
   text-decoration: none;
+}
+
+
+// ------ NAVBAR ------ //
+
+.jumbotron {
+  background-image: asset_url('cover_image.jpg');
+  background-size: cover;
+  height: 400px;
+}
+
+
+// ------ FOOTER ------ //
+
+footer {
+  background-color: $mainColor;
+  color: #fff;
 }
