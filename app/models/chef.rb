@@ -4,4 +4,5 @@ class Chef < ApplicationRecord
   validates :email, presence: true, :length => {maximum: 255},
             format: { with: URI::MailTo::EMAIL_REGEXP, message: "only allows valid emails" },
             uniqueness: { case_sensitive: false }
+  has_many :recipes
 end
